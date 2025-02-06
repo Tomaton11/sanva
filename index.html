@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💖💖14/02💖💖</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            display: flex;
+            justify-content: center;    
+            align-items: center;    
+            height: 100vh;    
+            margin: 0;
+        }
+        .container {
+            width: 300px;
+            margin: auto;   
+        }
+        h1 {
+            color: #ff4d4d;
+        }
+        .buttons {
+            margin-top: px;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #yes {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        #no {
+            background-color: #cccccc;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Queres ser mi San Valentín? ❤️</h1>
+        <div class="buttons">
+            <button id="yes">Si</button>
+            <button id="no">No</button>
+        </div>
+    </div>
+
+    <script>
+        function enlargeYesButton() {
+            let yesButton = document.getElementById("yes");
+            let currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
+            yesButton.style.fontSize = (currentSize + 5) + "px";
+        }
+        
+        document.getElementById("no").addEventListener("click", enlargeYesButton);
+        
+        document.getElementById("yes").addEventListener("click", function() {
+            alert("¡Sabía que dirías que sí! 💖");
+        });
+    </script>
+</body>
+</html>
