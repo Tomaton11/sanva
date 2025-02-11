@@ -6,9 +6,15 @@
     <title>💖💖14/02💖💖</title>
     <style>
         body {
+
+            background-image: url('./red-roses-1499046145x7M.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+
+
             text-align: center;
             font-family: Arial, sans-serif;
-            background-color: #ffe6e6;
             display: flex;
             justify-content: center;    
             align-items: center;    
@@ -16,14 +22,16 @@
             margin: 0;
         }
         .container {
-            width: 300px;
+            width: 500px;
             margin: auto;   
+            background-color: #000000ee;
+            border-radius: 30px;
         }
         h1 {
-            color: #ff4d4d;
+            color: #ff0000;
         }
         .buttons {
-            margin-top: px;
+            margin-top: 20px;
         }
         button {
             font-size: 16px;
@@ -35,18 +43,18 @@
             transition: all 0.3s ease;
         }
         #yes {
-            background-color: #ff4d4d;
-            color: white;
+            background-color: #ff0000;
+            color: rgb(255, 255, 255);
         }
         #no {
-            background-color: #cccccc;
-            color: black;
+            background-color: #ff0000;
+            color: rgb(255, 255, 255);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>¿Queres ser mi San Valentín? ❤️</h1>
+        <h1>¿Queres ser mi San Valentín? 💖💖💖</h1>
         <div class="buttons">
             <button id="yes">Si</button>
             <button id="no">No</button>
@@ -63,7 +71,7 @@
         document.getElementById("no").addEventListener("click", enlargeYesButton);
         
         document.getElementById("yes").addEventListener("click", function() {
-            alert("¡Sabía que dirías que sí! 💖");
+            alert("¡Muchas Gracias! 💖", /* <img src="https://media.admagazine.com/photos/65cfdc03cc5bf6d63c06d625/16:9/w_2560%2Cc_limit/como-plantar-tulipanes.jpg" width="30" height="30"></img> */);
         });
     </script>
 </body>
